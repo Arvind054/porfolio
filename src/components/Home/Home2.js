@@ -13,38 +13,33 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m <span className="purple">Arvind Choudhary</span>, an ECE
+              student at <span className="purple">IIIT Tiruchirappalli</span>
+              who enjoys turning ideas into fast, reliable web products.
               <br />
               <br />
-              I’m proficient in
+              I’ve worked across
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  JavaScript, TypeScript, C++, Python, Node.js, and Next.js{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              and I like building across both frontend and backend stacks.
               <br />
               <br />
-              My key areas of interest include developing
+              My focus is on
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  scalable systems, monitoring tools, feature platforms, and
+                  clean user experiences{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              Outside of work, I keep building through competitive programming,
+              open-source learning, and internships that ship measurable impact.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
