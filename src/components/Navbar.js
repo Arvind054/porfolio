@@ -12,7 +12,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function NavBar() {
@@ -78,6 +78,16 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgWorkAlt style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
             </Nav.Item>
 

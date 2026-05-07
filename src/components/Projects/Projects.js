@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import FlagShip from "../../Assets/Projects/Flagship.png";
+import Trackly from "../../Assets/Projects/Trackly.png";
+import NeuralMeet from "../../Assets/Projects/NeuralMeet.png";
 
 function Projects() {
   return (
@@ -19,7 +20,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={FlagShip}
               isBlog={false}
               title="Flagship"
               description="A scalable feature flag platform with percentage-based rollouts, rule-based targeting, Redis-backed caching, and audit logging for safe config changes. Built with Next.js, NeonDB, PostgreSQL, Drizzle ORM, TanStack Query, and Redis."
@@ -30,12 +31,22 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Trackly}
               isBlog={false}
               title="Trackly"
               description="A real-time web monitoring platform that tracks production signals such as referrers, UTM parameters, session duration, bounce rate, and active users through live dashboards, Redis caching, event-driven queues, and a sub-3KB tracking script."
               ghLink="https://github.com/Arvind054/Trackly"
               demoLink="https://trackly-beta.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={NeuralMeet}
+              isBlog={false}
+              title="NeuralMeet"
+              description="Built an AI-powered virtual meeting platform for real-time video calls with role-based AI agents. Implemented scalable APIs for meetings, transcripts, and recordings. Integrated backend job processing using Inngest."
+              ghLink="https://github.com/Arvind054/Neural-Meet"
+              demoLink="https://neural-meet.vercel.app/"
             />
           </Col>
         </Row>

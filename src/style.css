@@ -617,6 +617,136 @@ button:focus {
   }
 }
 /* --------- */
+/* Experience */
+/* --------- */
+
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.experience-content {
+  max-width: 1200px !important;
+}
+
+.experience-copy {
+  padding-top: 20px !important;
+  padding-bottom: 50px !important;
+}
+
+.experience-intro {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  max-width: 34rem;
+}
+
+.experience-card {
+  margin-top: 1rem;
+  background: rgba(11, 7, 22, 0.42) !important;
+  border: 1px solid rgba(200, 137, 230, 0.32) !important;
+  color: white !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22) !important;
+  border-radius: 18px !important;
+}
+
+.experience-card .card-body {
+  padding: 1.5rem 1.5rem 1.1rem;
+}
+
+.experience-role-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.15rem;
+}
+
+.experience-inline-logo {
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.2rem;
+  flex: 0 0 auto;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.experience-role {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.experience-company {
+  color: white;
+}
+
+.experience-location {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.experience-dates {
+  font-size: 1.05rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-top: 0.15rem;
+}
+
+.experience-bullets {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.experience-bullets li {
+  padding-bottom: 0.8rem;
+  list-style: disc;
+}
+
+@media (max-width: 767px) {
+  .experience-copy {
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+  }
+
+  .experience-role-row {
+    gap: 0.65rem;
+  }
+
+  .experience-inline-logo {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .experience-role {
+    font-size: 1.55rem;
+  }
+
+  .experience-dates {
+    white-space: normal;
+  }
+}
+
+/* --------- */
 /* Resume */
 /* --------- */
 
