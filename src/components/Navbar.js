@@ -13,7 +13,6 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -71,6 +70,16 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/programming"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Programming
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -98,16 +107,6 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://www.linkedin.com/in/arvind054/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedinIn style={{ marginBottom: "2px" }} /> LinkedIn
               </Nav.Link>
             </Nav.Item>
 
