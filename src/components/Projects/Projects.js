@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import FlagShip from "../../Assets/Projects/Flagship.png";
 import Trackly from "../../Assets/Projects/Trackly.png";
-import NeuralMeet from "../../Assets/Projects/NeuralMeet.png";
+import PulseIQ from "../../Assets/Projects/PulseIQ.png";
 
 function Projects() {
   const [isHovered, setIsHovered] = useState(false);
@@ -20,6 +20,17 @@ function Projects() {
           Few of my latest projects
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PulseIQ}
+              isBlog={false}
+              title="PulseIQ.AI"
+              description="PulseIQ.AI is an AI-native observability platform with a custom logging SDK for centralized log ingestion, real-time 
+monitoring, and incident tracking. "
+              ghLink="https://github.com/Arvind054/PulseIQ.AI"
+              demoLink="https://pulse-iq-ai.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={FlagShip}
@@ -39,16 +50,6 @@ function Projects() {
               description="A real-time web monitoring platform that tracks production signals such as referrers, UTM parameters, session duration, bounce rate, and active users through live dashboards, Redis caching, event-driven queues, and a sub-3KB tracking script."
               ghLink="https://github.com/Arvind054/Trackly"
               demoLink="https://trackly-beta.vercel.app/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={NeuralMeet}
-              isBlog={false}
-              title="NeuralMeet"
-              description="Built an AI-powered virtual meeting platform for real-time video calls with role-based AI agents. Implemented scalable APIs for meetings, transcripts, and recordings. Integrated backend job processing using Inngest."
-              ghLink="https://github.com/Arvind054/Neural-Meet"
-              demoLink="https://neural-meet.vercel.app/"
             />
           </Col>
         </Row>
